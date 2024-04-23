@@ -1,0 +1,57 @@
+.body {
+  background-color: white;
+  box-shadow: 0.2rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.icons {
+  font-size: 1rem;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  width: 15rem;
+}
+
+.icons:hover {
+  background-color: var(--secondary-green);
+  color: #fff !important;
+}
+
+.icons:focus {
+  background-color: var(--primary-green);
+  color: #fff;
+}
+
+.logoContainer {
+  width: 8rem;
+}
+
+.logOut {
+  background-color: var(--secondary-green);
+  font-size: 1rem;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  width: 15rem;
+}
+
+.profileMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .body {
+    width: 5rem;
+  }
+  .icons,
+  .logOut {
+    width: 4rem;
+  }
+}
